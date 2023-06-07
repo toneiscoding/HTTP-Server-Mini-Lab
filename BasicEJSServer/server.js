@@ -16,11 +16,11 @@ app.set('views', __dirname + "/views");
 
 
 app.get('/', (req, res) => {
-    res.render('Home',{ page: pages[0]} );
+    res.render('Home', pages[0]  );
 })
 
 app.get('/about', (req, res) => {
-    res.render('About', {page: pages[1]});
+    res.render('About',  pages[1]);
 })
 
 app.get('/contact', (req, res) => {
